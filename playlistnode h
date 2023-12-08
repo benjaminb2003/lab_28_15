@@ -21,8 +21,9 @@ public:
         nextNodePtr = 0;
     }
     
-    PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit);
     PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit, PlaylistNode* nextLoc);
+
+    PlaylistNode(string uniqueIDInit, string songNameInit, string artistNameInit, int songLengthInit);
    string GetID();
    string GetSongName();
    string GetArtistName();
